@@ -194,7 +194,7 @@
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/res/GPS_inYourCar.png"/>
+              <Image iconType="3" name="/es/javiergarciaescobedo/prog02/taximetro/res/GPS_inYourCar.png"/>
             </Property>
           </Properties>
         </Component>
@@ -309,7 +309,7 @@
     <Component class="javax.swing.JButton" name="jButtonFinTrayecto">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/res/process-stop.png"/>
+          <Image iconType="3" name="/es/javiergarciaescobedo/prog02/taximetro/res/process-stop.png"/>
         </Property>
       </Properties>
       <Events>
@@ -319,7 +319,7 @@
     <Component class="javax.swing.JButton" name="jButtonBajadaBandera">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/res/green_flag.png"/>
+          <Image iconType="3" name="/es/javiergarciaescobedo/prog02/taximetro/res/green_flag.png"/>
         </Property>
       </Properties>
       <Events>

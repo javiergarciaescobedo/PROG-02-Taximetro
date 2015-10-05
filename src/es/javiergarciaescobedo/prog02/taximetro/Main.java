@@ -1,4 +1,4 @@
-package taximetro;
+package es.javiergarciaescobedo.prog02.taximetro;
 
 import coordinateslib.CoordinatesConverter;
 import java.text.DateFormat;
@@ -14,18 +14,18 @@ import org.apache.commons.validator.routines.CreditCardValidator;
  * Imagen GPS:
  * https://openclipart.org/detail/191658/gps-for-your-car-by-tmjbeary-191658
  * Imagen bandera verde:
- * https://openclipart.org/detail/62683/green-flag-by-j_alves Apache Commons
- * Lang: https://commons.apache.org/proper/commons-lang/download_lang.cgi Apache
- * Commons Lang API:
- * https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/index.html
- * Apache Commons Validator:
- * http://commons.apache.org/proper/commons-validator/download_validator.cgi
+ * https://openclipart.org/detail/62683/green-flag-by-j_alves 
+ * 
+ * Librería Apache Commons Lang: 
+ * https://commons.apache.org/proper/commons-lang 
+ * Librería Apache Commons Validator:
+ * http://commons.apache.org/proper/commons-validator
  */
 public class Main extends javax.swing.JFrame {
 
-    double TARIFA_MINUTO = 0.50;
-    double BAJADA_BANDERA = 2;
-    double TIPO_IVA = 21;
+    final double TARIFA_MINUTO = 0.50;
+    final double BAJADA_BANDERA = 2;
+    final double TIPO_IVA = 21;
     Calendar horaBajadaBandera;
     DateFormat formatoHora = DateFormat.getTimeInstance(DateFormat.MEDIUM);
     int contadorTickets = 0;
@@ -37,7 +37,7 @@ public class Main extends javax.swing.JFrame {
         initComponents();
         this.setResizable(false);
         this.setLocationByPlatform(true);
-        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("/res/aiga_taxi.png"));
+        ImageIcon img = new javax.swing.ImageIcon(getClass().getResource("res/aiga_taxi.png"));
         this.setIconImage(img.getImage());
     }
 
@@ -100,7 +100,7 @@ public class Main extends javax.swing.JFrame {
 
         jLabelLongitud.setText(" ");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/GPS_inYourCar.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/es/javiergarciaescobedo/prog02/taximetro/res/GPS_inYourCar.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -196,14 +196,14 @@ public class Main extends javax.swing.JFrame {
                     .addContainerGap()))
         );
 
-        jButtonFinTrayecto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/process-stop.png"))); // NOI18N
+        jButtonFinTrayecto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/es/javiergarciaescobedo/prog02/taximetro/res/process-stop.png"))); // NOI18N
         jButtonFinTrayecto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonFinTrayectoActionPerformed(evt);
             }
         });
 
-        jButtonBajadaBandera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/res/green_flag.png"))); // NOI18N
+        jButtonBajadaBandera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/es/javiergarciaescobedo/prog02/taximetro/res/green_flag.png"))); // NOI18N
         jButtonBajadaBandera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonBajadaBanderaActionPerformed(evt);
